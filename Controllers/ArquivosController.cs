@@ -11,6 +11,8 @@ namespace Cap03N.Controllers
     {        
         public ActionResult Foto()
         {
+            // Isso volta uma imagem
+
             var Arq = Server.MapPath("/Arqs/FundoWin10.jpg");
 
             return base.File(Arq, "image/jpeg");

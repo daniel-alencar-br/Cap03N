@@ -20,6 +20,8 @@ namespace Cap03N.Controllers
 
         public ActionResult Doc()
         {
+            // Isso volta um PDF
+
             var Arq = Server.MapPath("/Arqs/Apostila.pdf");
 
             return base.File(Arq, "application/pdf");
